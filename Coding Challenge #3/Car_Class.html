@@ -1,6 +1,7 @@
 <html>
     <body>
         <script>
+            //U6899-7808
             class car {
                 constructor (make, speed){
                 this.make = make;
@@ -17,6 +18,20 @@
                 console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
             }
             }
+            let vehicle1 = new car("bmw", 120);
+            let vehicle2 = new car("Mercedes", 95);
+
+            console.log("Test 1");
+            vehicle1.acceleration();//130
+            vehicle1.brake();//125
+            vehicle1.acceleration();//135
+            vehicle1.brake();//130
+        
+            console.log("Test 2");
+            vehicle2.acceleration();//105
+            vehicle2.acceleration();//115
+            vehicle2.brake();//110
+            vehicle2.brake();//105
         </script>
     </body>
 </html>
