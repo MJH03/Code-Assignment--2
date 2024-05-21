@@ -1,0 +1,1 @@
+The purpose of the project is to demonstrate understanding of how the class cyntax works within javascript. The class created will be about cars and how they can they accelerated and decreased in speed.
