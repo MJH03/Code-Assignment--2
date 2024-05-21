@@ -1,0 +1,1 @@
+The purpose of the project is to create tip calculator that will determine the percentage required based on the amount.
