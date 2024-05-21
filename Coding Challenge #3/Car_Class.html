@@ -9,7 +9,12 @@
                 console.log(`Current Speed: ${speed}km/h`);
             }
             acceleration(){
-                return this.speed + 10
+                return this.speed += 10;
+                console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
+            }
+            brake(){
+                return this.speed -= 5;
+                console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
             }
             }
         </script>
