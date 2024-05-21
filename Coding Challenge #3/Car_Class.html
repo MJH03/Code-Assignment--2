@@ -3,10 +3,13 @@
         <script>
             class car {
                 constructor (make, speed){
-                this.make = make
-                this.speed = speed
-                console.log(`Car make: ${make}`)
-                console.log(`Current Speed: ${speed}km/h`)
+                this.make = make;
+                this.speed = speed;
+                console.log(`Car make: ${make}`);
+                console.log(`Current Speed: ${speed}km/h`);
+            }
+            acceleration(){
+                return this.speed + 10
             }
             }
         </script>
