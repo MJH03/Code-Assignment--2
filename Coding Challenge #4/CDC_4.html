@@ -1,6 +1,7 @@
 <html>
     <body>
         <script>
+            //U6899-7808
             class car {
                 constructor (make, speed){
                 this.make = make;
@@ -16,6 +17,14 @@
                 return this.speed -= 5;
                 console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
             }
+            }
+            // Step 1: Implement EV Class
+            class EV extends car {
+                constructor(make, speed, charge){
+                super(make, speed);
+                    this.charge = charge;
+            console.log(`Battery at ${this.charge}%`);
+        }
             }
         </script>
     </body>
