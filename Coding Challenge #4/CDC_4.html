@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            class car {
+                constructor (make, speed){
+                this.make = make;
+                this.speed = speed;
+                console.log(`Car make: ${make}`);
+                console.log(`Current Speed: ${speed}km/h`);
+            }
+            acceleration(){
+                return this.speed += 10;
+                console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
+            }
+            brake(){
+                return this.speed -= 5;
+                console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
+            }
+            }
+        </script>
+    </body>
+</html>
