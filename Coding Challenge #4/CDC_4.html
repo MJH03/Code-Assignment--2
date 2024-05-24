@@ -25,6 +25,11 @@
                     this.charge = charge;
             console.log(`Battery at ${this.charge}%`);
         }
+        // Step 2: Charge Battery Method
+        chargeBattery(chargeTo){
+            return  (this.charge += chargeTo) <= 100
+            console.log(`The battery is now at ${this.charge}`);
+        }
             }
         </script>
     </body>
