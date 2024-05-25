@@ -18,7 +18,7 @@
                 console.log(`The ${this.make} is now traveling ${this.speed}km/h`);
             }
             }
-            // Step 1: Implement EV Class
+        // Step 1: Implement EV Class
             class EV extends car {
                 constructor(make, speed, charge){
                 super(make, speed);
@@ -38,6 +38,16 @@
                 console.log(`${this.make} crusing at ${this.speed} with a charge of ${this.charge}%`);
         }
     }
+        // Step 4: Testing EV Class
+        electric_vehicle =new EV("Tesla", 120, 23)
+        electric_vehicle.brake() // speed 115
+        electric_vehicle.acceleration() //speed: 135 charge: 22%
+        electric_vehicle.chargeBattery(20) // charge: 42%
+        electric_vehicle.acceleration() // speed:145 charge:41%
+        electric_vehicle.acceleration() // speed: 155 charge: 40%
+        electric_vehicle.chargeBattery(15) // charge 55%
+        electric_vehicle.brake() // speed 150
+        console.log(`${electric_vehicle.make} crusing at ${electric_vehicle.speed} with a charge of ${electric_vehicle.charge}%`);
         </script>
     </body>
 </html>
