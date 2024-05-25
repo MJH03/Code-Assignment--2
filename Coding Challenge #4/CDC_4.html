@@ -24,13 +24,20 @@
                 super(make, speed);
                     this.charge = charge;
             console.log(`Battery at ${this.charge}%`);
-        }
-        // Step 2: Charge Battery Method
+         }
+         // Step 2: Charge Battery Method
         chargeBattery(chargeTo){
-            return  (this.charge += chargeTo) <= 100
+            return 1 >= (this.charge += chargeTo) <= 100
             console.log(`The battery is now at ${this.charge}`);
         }
-            }
+        // Step 3: Customize Accelerate Method
+        acceleration(){
+            const baseAcceleration = super.acceleration() + 10
+            const batteryUsage = 1;
+                return (this.charge -= batteryUsage) && baseAcceleration;
+                console.log(`${this.make} crusing at ${this.speed} with a charge of ${this.charge}%`);
+        }
+    }
         </script>
     </body>
 </html>
