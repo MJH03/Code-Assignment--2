@@ -27,3 +27,9 @@ class Manager extends Employee {
 return "Annual Salary: $" +((super.annualSalary() * bonus) + super.annualSalary())  
 }
 }
+//Step 3: Instantiate Manager Objects
+const Paint = new Manager("Bob Ross", 6600.00, "Digital Marketing")
+Paint.annualSalary()
+
+const Goodies = new Manager("Debbie Little", 7205.00, "Finance")
+Goodies.annualSalary()
