@@ -1,0 +1,1 @@
+The goal of this project is to create an employee class that determines the name and slary of the person. It will also have an extended class that focused on whether a person is a manager or not. 
