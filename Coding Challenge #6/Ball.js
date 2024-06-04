@@ -28,11 +28,19 @@ class Ball {
     }
     // Step 4 Update Function
     update() {
-        if (this.x < width || this.x > width){
+        if (this.x < 0 || this.x > width){
             this.dx *=-1
         }
-        if (this.y < height || this.y > height) {
+        if (this.y < 0 || this.y > height) {
             this.dy *=-1
         }
     }
 }
+    // Step 5 Animation Logic
+setInterval(() =>{
+    ball1.drawCircle();
+    ball1.update();
+}, 10);
+
+    
+const ball1 = new Ball(200, 160, 20, "red", 2, 2)
