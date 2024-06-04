@@ -1,0 +1,1 @@
+The goal of this project is to create a boucning ball inside of the canvas tag within HTML. The bouncing ball will be created off of javascript. 
