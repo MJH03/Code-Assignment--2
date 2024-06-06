@@ -1,0 +1,1 @@
+The goal of this project is to create a form using HTML and JavaScript. This form will be a feedback that includes name, rating, and comments. That submits everything at the bottom of the survey. 
