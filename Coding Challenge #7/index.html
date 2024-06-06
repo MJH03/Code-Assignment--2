@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Step 1: Setup -->
     <title>Feedback Form</title>
 </head>
 <body>
-    <!--Step 1: Setup -->
-    <form action="">
+    <!--Step 2: Create Feedback Form-->
+    <form action="feebackForm">
+        <h2>Customer Care Feedback Form</h2>
 
-
-
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname"> <br> 
+        <br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname"> <br>
+<p>
+        <h4>Please give us rating from 1-5 on our services: </h4></PLease>
+        <label for="rating">1 Star</label>
+        <input type="radio" name="rating" id="rating1"><br>
+        <label for="rating">2 Star</label>
+        <input type="radio" name="rating" id="rating2"><br>
+        <label for="rating">3 Star</label>
+        <input type="radio" name="rating" id="rating3"><br>
+        <label for="rating">4 Star</label>
+        <input type="radio" name="rating" id="rating4"><br>
+        <label for="rating">5 Star</label>
+        <input type="radio" name="rating" id="rating5"><br>
+</p>
+        <p>
+        <label for="comments">Comments:</label><br>
+        <textarea name="comments" id="comments"></textarea> <br>
+        </p>
+        <br>
+        <input type="submit" name="submit" id="submit">
+       
+        <br> <div id="feebackForm"> </div>
     </form>
     
 </body>
