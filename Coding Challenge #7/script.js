@@ -10,10 +10,10 @@ document.getElementById("feedbackForm").addEventListener("submit",(event)=>{
     const rating = document.getElementById("choice").value;
     const comments = document.getElementById("comments").value;
 
-    
+    //Step 4: Display Feedback
     document.getElementById("feedbackSummary").innerHTML =` 
     <h3>${firstname} ${lastname}</h3>
     <p><strong>Rating: </strong> ${rating}</p>
     <p>${comments}</p>
 `
-});
+})
