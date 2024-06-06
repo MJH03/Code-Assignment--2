@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--U6899-7808-->
     <!--Step 1: Setup -->
     <title>Feedback Form</title>
 </head>
-<body>
+<body bgcolor="beige">
     <!--Step 2: Create Feedback Form-->
-    <form action="feebackForm">
+    <form id="feedbackForm">
         <h2>Customer Care Feedback Form</h2>
 
-        <label for="firstname">First Name:</label>
-        <input type="text" name="firstname" id="firstname"> <br> 
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required> <br> 
         <br>
-        <label for="lastname">Last Name:</label>
-        <input type="text" name="lastname" id="lastname"> <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required> <br>
 <p>
         <h4>Please give us rating from 1-5 on our services: </h4></PLease>
-        <label for="rating">1 Star</label>
-        <input type="radio" name="rating" id="rating1"><br>
-        <label for="rating">2 Star</label>
-        <input type="radio" name="rating" id="rating2"><br>
-        <label for="rating">3 Star</label>
-        <input type="radio" name="rating" id="rating3"><br>
-        <label for="rating">4 Star</label>
-        <input type="radio" name="rating" id="rating4"><br>
-        <label for="rating">5 Star</label>
-        <input type="radio" name="rating" id="rating5"><br>
+        <label for="rating">1 Stars:</label>
+        <input type="radio" name="rating" value="1 Stars" id="choice" ><br>
+        <label for="rating">2 Stars:</label>
+        <input type="radio" name="rating" value="2 Stars" id="choice" ><br>
+        <label for="rating">3 Stars:</label>
+        <input type="radio" name="rating" value="3 Stars" id="choice" ><br>
+        <label for="rating">4 Stars:</label>
+        <input type="radio" name="rating" value="4 Stars" id="choice" ><br>
+        <label for="rating">5 Stars:</label>
+        <input type="radio" name="rating" value="5 Stars" id="choice" required><br>
 </p>
         <p>
         <label for="comments">Comments:</label><br>
-        <textarea name="comments" id="comments"></textarea> <br>
+        <textarea name="comments" id="comments" cols="70" rows="5" required></textarea> <br>
         </p>
         <br>
-        <input type="submit" name="submit" id="submit">
-       
-        <br> <div id="feebackForm"> </div>
+        <button type="submit">Submit</button>
+        <br> <div id="feedbackSummary"> </div>
+        <script src="script.js"></script>
+
+
     </form>
     
 </body>
