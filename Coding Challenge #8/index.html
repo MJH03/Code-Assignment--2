@@ -4,45 +4,51 @@
     <!--U6899-7808-->
     <title>Event Form</title>
 </head>
-<body bgcolor="limegreen">
+<body bgcolor="orange">
     
     <!--Create the Registration Form-->
     <center><h1>Event Registration Form</h1> </center>
     <br>
     
-        <form src="script.js">
+        <form id="eventForm">
             <h4>Full Name:</h4>
             
             <label for="firstName">First:</label>
-            <input type="text" name="firstName" id="firstName" required>
+            <input type="text" name="firstName" id="firstName">
            <label for="lastName">Last:</label>
-           <input type="text" name="lastName" id="lastName" required>
+           <input type="text" name="lastName" id="lastName">
            <br> <br>
 
-           <h4>Email and Date</h4>
+           <h4>Email and Date:</h4>
            <label for="email">Email:</label>
-           <input type="text" name="email" id="email" required>
+           <input type="text" name="email" id="email">
            
            <label for="date">Date:</label>
-            <input type="date" name="date" id="date" required>
+            <input type="date" name="date" id="date">
             <br> <br>
             <h4>Please choose your meal preferences.</h4>
-            <label for="mealChoice">Vegitarian</label>
-            <input type="checkbox" name="mealChoice" id="vegitarian" required>
-            <label for="mealChoice">Non-Vegitarian</label>
-            <input type="checkbox" name="mealChoice" id="Non-Vegitarian" required>
-            <label for="mealChoice">Vegan</label>
-            <input type="checkbox" name="mealChoice" id="Vegan" required>
-            <label for="mealChoice">Pescetarian</label>
-            <input type="checkbox" name="mealChoice" id="Pescetarian">
-            <label for="mealChoice">Allergies</label>
-            <input type="checkbox" name="mealChoice" id="Allergies" required>
+
+            <input type="checkbox" name="mealChoice" id="vegitarian" value="Vegitarian">
+            <label for="vegitarian">Vegitarian</label>
+            
+            <input type="checkbox" name="mealChoice" id="non_vegitarian" value="Non_Vegitarian" >
+            <label for="non_vegitarian">Non-Vegitarian</label>
+
+            <input type="checkbox" name="mealChoice" id=vegan value="Vegan">
+            <label for="vegan">Vegan</label> 
+            
+            <input type="checkbox" name="mealChoice" id=pescetarian value="Pescetarian">
+            <label for="pescetarian">Pescetarian</label>
+            
+            <input type="checkbox" name="mealChoice" id="allergies" value="Allergies">
+            <label for="pescetarian">Allergies</label>
+
             <br><br>
             <input type="submit" name="submit" id="submit">
+       
+<div id="registrant_information"> </div>
 
-<div id="registrant_information">
-
-</div>
+<script src="script.js"></script>
 
         </form>
     
