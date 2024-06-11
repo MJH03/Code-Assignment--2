@@ -14,6 +14,7 @@ event.preventDefault();
         alert("Please fill out all fields.");
         return;
     }
+    //Step 4: Display Registration Details
     const information = document.getElementById(`registrant_information`)
     const registration = document.createElement(`div`)
     
