@@ -1,1 +1,1 @@
-The project will be an event registration for with full submission and chioces of name, email, time, and meal preferences. 
+The project will be an event registration for with full submission and chioces of name, email, time, and meal preferences.
