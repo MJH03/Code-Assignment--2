@@ -7,10 +7,10 @@ function main(){
     d3.selectAll("div")
         .on("mouseover", function(){
                 d3.select(this)
-                    .style("background-color", "firebrick")
+                    .style("background-color", "firebrick");// Step 4 Add Interactivity
         })
         .on("mouseout", function(){
             d3.select(this)
-                .style("background-color", "seagreen")
+                .style("background-color", "seagreen");
     })
-}
+};
